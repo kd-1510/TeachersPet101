@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:layout_marginTop="40dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:text="@string/teacher_id"
+        android:id="@+id/ID"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/teacher_id"
+        app:layout_constraintBottom_toTopOf="@id/PASSWORD"
+        android:paddingTop="9sp"/>
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/teacher_id"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/password"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/password"
+        android:id="@+id/PASSWORD"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/ID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/password"
+        app:layout_constraintBottom_toTopOf="@id/login"
+        android:paddingTop="9sp"/>
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/password"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/teacher_id"
+        app:layout_constraintStart_toEndOf="@id/PASSWORD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/login"
+        android:background="@color/green"
+        android:shadowColor="@color/greenShadow"
+        android:fontFamily="calibri"
+        android:textStyle="bold"
+        android:text="@string/login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>
