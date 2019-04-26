@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mitwpu.kitzee.teacherspet101">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tpicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tpicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".ClassTeacherAddsStudents" />
+        <activity android:name=".ClassTeacherOptions" />
+        <activity android:name=".ClassSelectionForTeacher" />
+        <activity android:name=".SubjectSelectionForTeacher" />
+        <activity android:name=".Attendance" />
+        <activity android:name=".AttendanceTaken" />
+        <activity android:name=".TeachersPet">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

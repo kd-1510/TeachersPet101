@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TeachersPet101</string>
+    <string name="roll_num">Roll Number</string>
+    <string name="stud_name">Student Name</string>
+    <string name="add">Add Student</string>
+    <string name="teacher_id">Teacher ID</string>
+    <string name="password">Password </string>
+    <string name="login">LOGIN</string>
+    <string name="add_students">Add Students</string>
+    <string name="take_attendance">Take Attendance</string>
+    <string name="next">NEXT</string>
+    <string name="exit">EXIT</string>
+</resources>
